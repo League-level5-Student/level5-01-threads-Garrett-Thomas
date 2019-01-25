@@ -1,6 +1,5 @@
 package _04_Thread_Pool;
 
-import java.util.ArrayList;
 import java.util.concurrent.ConcurrentLinkedQueue;
 
 public class ThreadPool {
@@ -11,6 +10,7 @@ public class ThreadPool {
 		ts = new Thread[i];
 		for (int j = 0; j < i; j++) {
 			ts[j]= new Thread(new Worker(clq));
+			System.out.println(1);
 		}
 		// TODO Auto-generated constructor stub
 	}
